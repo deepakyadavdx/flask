@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Processor</title>
+</head>
+<body>
+    <h1>Upload Document for Processing</h1>
+    <form action="/process" method="post" enctype="multipart/form-data">
+        <label for="chunk_size">Chunk Size:</label>
+        <input type="number" id="chunk_size" name="chunk_size" value="250" required><br><br>
+        
+        <button type="submit">Process File</button>
+    </form>
+</body>
+</html>
